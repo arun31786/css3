@@ -1,0 +1,13 @@
+        body{
+            background: #ddd;
+        }
+        #para1{
+            border: 1px solid red;
+        }
+        #para2{
+            border: 1px dashed blue;
+        }
+        .text{
+            color: white;
+            background: black;
+        }
