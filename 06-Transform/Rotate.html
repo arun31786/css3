@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>WEB - CSS3</title>
+<style> 
+div
+{
+    width:100px;
+    height:75px;
+    background-color:Azure;
+    border:1px solid black;
+    margin: 10px;
+
+
+    transform: rotate(120deg);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div>Hello. This is rotating DIV element.</div>
+
+
+<script>
+
+    var element = document.getElementsByTagName('div')[0];
+
+    element.style.color = 'red';
+
+    var angle = 90;
+    function rotateDiv(){
+        element.style.transform = "rotate("+angle+"deg)";
+        if(angle === 360)
+            angle = 0;
+        else 
+            angle += 10;
+    }
+
+    setInterval(function(){
+        rotateDiv();
+    }, 100);
+
+</script>
+
+</body>
+</html>
